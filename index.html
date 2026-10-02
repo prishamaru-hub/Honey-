@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Honey ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+  --pink:#ffd9e5; --rose:#ff6f91; --deep:#7d2948; --cream:#fffaf7;
+  --ink:#34252b; --peach:#ffe8d6; --lav:#eee4ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:var(--cream);color:var(--ink);
+ font-family:"DM Sans",sans-serif;overflow-x:hidden;
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+ background-image:radial-gradient(#ff9bb5 1px,transparent 1px);
+ background-size:28px 28px;
+}
+nav{
+ position:fixed;top:0;left:0;right:0;z-index:20;
+ display:flex;justify-content:center;gap:22px;padding:16px;
+ background:rgba(255,250,247,.78);backdrop-filter:blur(12px);
+}
+nav a{color:var(--deep);text-decoration:none;font-size:13px;font-weight:700}
+section{position:relative;min-height:100vh;padding:100px 7vw;display:flex;align-items:center;justify-content:center}
+.hero{text-align:center;background:linear-gradient(135deg,#fff8fa,#ffe4ec 55%,#fff3e8)}
+.hero h1{font:700 clamp(4rem,13vw,9rem)/.9 "Playfair Display",serif;color:var(--deep);margin:12px 0}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:700;color:var(--rose)}
+.hero p{font-size:18px;max-width:600px;margin:25px auto;line-height:1.7}
+.btn{
+ border:0;border-radius:999px;padding:14px 24px;background:var(--deep);color:white;
+ font:700 14px "DM Sans";cursor:pointer;box-shadow:0 10px 25px #7d294833;
+}
+.floating{position:absolute;font-size:28px;animation:float 4s ease-in-out infinite}
+.f1{top:18%;left:13%}.f2{top:28%;right:12%;animation-delay:1s}.f3{bottom:17%;left:20%;animation-delay:2s}.f4{bottom:23%;right:20%;animation-delay:.5s}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+.wrap{max-width:1050px;width:100%}
+h2{font:700 clamp(2.3rem,5vw,4.5rem)/1 "Playfair Display",serif;color:var(--deep);margin:0 0 16px}
+.sub{max-width:650px;line-height:1.7;margin-bottom:35px}
+.timeline{display:grid;gap:18px}
+.card{
+ background:white;border:1px solid #f3dce4;border-radius:24px;padding:25px;
+ box-shadow:0 10px 30px #7d294810;transition:.25s;
+}
+.card:hover{transform:translateY(-5px)}
+.card small{color:var(--rose);font-weight:700}
+.card h3{margin:7px 0 8px;color:var(--deep)}
+.card p{line-height:1.7;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.love .card:nth-child(1){background:#fff0f4}.love .card:nth-child(2){background:#fff5e9}
+.love .card:nth-child(3){background:#f1eaff}.love .card:nth-child(4){background:#eaf8f3}
+.reason{text-align:center;min-height:0;padding-top:120px;padding-bottom:120px;background:linear-gradient(180deg,#fff,#fff0f5)}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.reason button{background:white;border:2px dashed #ffb2c6;border-radius:22px;padding:28px 18px;min-height:150px;cursor:pointer;font:700 15px "DM Sans";color:var(--deep)}
+.reason button span{display:block;font-size:36px;margin-bottom:10px}
+.reveal{display:none;margin-top:20px;background:#fff8fb;border-radius:20px;padding:20px;line-height:1.6}
+.reveal.show{display:block}
+.memories{background:linear-gradient(135deg,#fff6ef,#f5efff)}
+.polaroids{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:35px}
+.polaroid{
+ background:white;padding:12px 12px 25px;box-shadow:0 10px 25px #34252b18;
+ transform:rotate(-2deg);transition:.25s;
+}
+.polaroid:nth-child(2){transform:rotate(2deg)}.polaroid:nth-child(3){transform:rotate(-1deg)}.polaroid:nth-child(4){transform:rotate(3deg)}
+.polaroid:hover{transform:rotate(0) translateY(-8px)}
+.photo{
+ height:190px;display:flex;align-items:center;justify-content:center;
+ background:linear-gradient(135deg,#ffd9e5,#ffe8d6);font-size:48px;
+}
+.polaroid p{text-align:center;font-family:"Playfair Display";color:var(--deep);margin:15px 3px 0}
+.stats{text-align:center;background:#fff}
+.statsgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:40px}
+.stat{padding:28px 12px;border-radius:22px;background:#fff0f4}
+.stat b{display:block;font:700 38px "Playfair Display";color:var(--deep)}
+.stat span{font-size:13px}
+.letter{background:var(--deep);color:white}
+.letter h2{color:white}.letter .sub{color:#ffe8ef}
+.paper{max-width:750px;background:#fffaf7;color:var(--ink);padding:45px;border-radius:6px;box-shadow:0 20px 50px #0003;line-height:1.9;font-family:"Playfair Display";font-size:18px}
+.paper .sign{margin-top:30px;color:var(--deep);font-weight:700}
+.final{text-align:center;background:radial-gradient(circle at center,#ffe1eb,#fff8f5 65%)}
+.final h2{font-size:clamp(3rem,8vw,7rem)}
+.secret{margin-top:25px;display:none;font-size:22px;line-height:1.7;color:var(--deep)}
+.secret.show{display:block}
+footer{text-align:center;padding:35px;color:#8f6977;font-size:12px}
+.heart{color:#ff5c83}
+.confetti{position:fixed;top:-20px;z-index:99;pointer-events:none;animation:fall 3.5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:700px){
+ nav{gap:10px;padding:12px 5px}nav a{font-size:10px}
+ section{padding:90px 6vw}.grid,.reasons{grid-template-columns:1fr}.polaroids{grid-template-columns:repeat(2,1fr)}.statsgrid{grid-template-columns:repeat(2,1fr)}
+ .photo{height:140px}.paper{padding:28px;font-size:16px}
+}
+</style>
+</head>
+<body>
+<nav>
+ <a href="#story">OUR STORY</a><a href="#love">WHY YOU</a><a href="#memories">MEMORIES</a><a href="#letter">LETTER</a>
+</nav>
+
+<section class="hero">
+ <div class="floating f1">💗</div><div class="floating f2">✨</div><div class="floating f3">🌷</div><div class="floating f4">🧸</div>
+ <div>
+  <div class="eyebrow">National Boyfriend's Day · October 3</div>
+  <h1>Hey, Honey.</h1>
+  <p>I made you a tiny corner of the internet because apparently one day dedicated to you wasn't enough. Also, I had to document the fact that I somehow got a <b>super handsome realist</b> to date me.</p>
+  <button class="btn" onclick="document.querySelector('#story').scrollIntoView()">Enter our little world →</button>
+ </div>
+</section>
+
+<section id="story">
+ <div class="wrap">
+  <div class="eyebrow">3.5 years of knowing you · nearly 1 year of dating you</div>
+  <h2>How did we get here?</h2>
+  <p class="sub">Somehow, somewhere between knowing each other for years and becoming <i>us</i>, you became one of the most important people in my life.</p>
+  <div class="timeline">
+   <div class="card"><small>CHAPTER 01</small><h3>We met.</h3><p>And then proceeded to spend approximately 3.5 years becoming increasingly important to each other. Casual.</p></div>
+   <div class="card"><small>CHAPTER 02</small><h3>We became “us”.</h3><p>Nearly a year of dating, and I still get that little “oh, that's my person” feeling.</p></div>
+   <div class="card"><small>CHAPTER 03</small><h3>And now...</h3><p>Here we are. With memories, inside jokes, trips, kisses, rants, arguments, laughter and a ridiculous number of moments that I wouldn't trade for anything.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="love" class="love">
+ <div class="wrap">
+  <div class="eyebrow">The very serious scientific reasons</div>
+  <h2>Why I love you.</h2>
+  <p class="sub">After extensive research (conducted entirely by me), the results are conclusive.</p>
+  <div class="grid">
+   <div class="card"><h3>🧠 You tell me the truth.</h3><p>Even when I don't want to hear it. Especially when I don't want to hear it. You somehow manage to be honest without just telling me what I want to hear.</p></div>
+   <div class="card"><h3>🎧 You listen to my rants.</h3><p>Patiently. Repeatedly. Sometimes about the same thing. This is either love or an impressive survival instinct.</p></div>
+   <div class="card"><h3>⚖️ You balance me.</h3><p>I'm the emotional one. You're the realist. Somehow, instead of cancelling each other out, we make each other make a little more sense.</p></div>
+   <div class="card"><h3>🥵 You're ridiculously handsome.</h3><p>I'm sorry but this had to be formally documented. It would be irresponsible journalism to leave it out.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="reason">
+ <div class="wrap">
+  <div class="eyebrow">Click the hearts</div>
+  <h2>Honey's hidden compliments 💌</h2>
+  <p class="sub">Because apparently I can't just say these things once.</p>
+  <div class="reasons">
+   <button onclick="reveal(this,'You make ordinary days feel special. ❤️')"><span>♡</span>Reason #1</button>
+   <button onclick="reveal(this,'I can be completely myself around you — including the dramatic, overthinking, hungry version. 😭')"><span>♡</span>Reason #2</button>
+   <button onclick="reveal(this,'You are the person I want beside me for the exciting moments AND the boring ones. That says a lot. 🥹')"><span>♡</span>Reason #3</button>
+  </div>
+  <div id="reveal" class="reveal"></div>
+ </div>
+</section>
+
+<section id="memories" class="memories">
+ <div class="wrap">
+  <div class="eyebrow">Our little archive</div>
+  <h2>Favourite memories.</h2>
+  <p class="sub">These are only a few. The real list is basically “every moment I've spent with you.”</p>
+  <div class="polaroids">
+   <div class="polaroid"><div class="photo">🏰</div><p>Udaipur ✨<br><small>one of my favourites</small></p></div>
+   <div class="polaroid"><div class="photo">💃🏽</div><p>Garba night<br><small>very us.</small></p></div>
+   <div class="polaroid"><div class="photo">💋</div><p>Our first kiss<br><small>still thinking about it.</small></p></div>
+   <div class="polaroid"><div class="photo">🫶🏽</div><p>Everyday moments<br><small>the ones I treasure most</small></p></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="wrap">
+  <div class="eyebrow">Totally legitimate relationship statistics</div>
+  <h2>Us, according to the data.</h2>
+  <div class="statsgrid">
+   <div class="stat"><b>3.5+</b><span>years of knowing you</span></div>
+   <div class="stat"><b>~1</b><span>year of dating you</span></div>
+   <div class="stat"><b>∞</b><span>rants you've survived</span></div>
+   <div class="stat"><b>1</b><span>Honey. Mine. ❤️</span></div>
+ </div>
+ </div>
+</section>
+
+<section id="letter" class="letter">
+ <div class="wrap">
+  <div class="eyebrow" style="color:#ffc0d0">A slightly serious bit</div>
+  <h2>Dear Honey,</h2>
+  <div class="paper">
+   I don't think I say this enough, but I'm really grateful that you're in my life.
+   <br><br>
+   We've known each other for three and a half years, and somehow getting to know you has been one of my favourite stories to live. From Udaipur to garba nights, from our first kiss to all the completely ordinary moments in between, you've become such a big part of my life.
+   <br><br>
+   I love that you listen to all my rants even when I know I am being a little dramatic. I love that you tell me the truth instead of simply telling me what I want to hear. I love that you're a realist when I am very much in my feelings, and that somehow you balance me without ever making me feel like I need to be less myself.
+   <br><br>
+   And yes, you're ridiculously handsome. I will continue to complain about how unfair that is.
+   <br><br>
+   But more than anything, I love how it feels to spend time with you. Big adventures are amazing, but so are the tiny moments that nobody else would think twice about. Those are the moments I keep.
+   <br><br>
+   Happy National Boyfriend's Day, Honey. Here's to this chapter — and all the ridiculous, beautiful chapters still waiting for us.
+   <div class="sign">Love,<br>Prisha ❤️</div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div>
+  <div class="eyebrow">One last thing...</div>
+  <h2>Happy Boyfriend's Day,<br>Honey. ❤️</h2>
+  <p class="sub" style="margin:20px auto">Thank you for being my favourite person to annoy, love, travel with, laugh with, and do absolutely nothing with.</p>
+  <button class="btn" onclick="surprise()">DO NOT CLICK THIS 👀</button>
+  <div id="secret" class="secret">Okay fine.<br><b>I love you. A lot.</b><br><br>Now come here. 🫂💗</div>
+ </div>
+</section>
+<footer>Made with entirely too much love by Prisha · for Honey ❤️</footer>
+
+<script>
+function reveal(btn,msg){
+ const box=document.getElementById('reveal');
+ box.textContent=msg; box.classList.add('show');
+ document.querySelectorAll('.reason button').forEach(b=>b.style.opacity='.55');
+ btn.style.opacity='1';
+}
+function surprise(){
+ const s=document.getElementById('secret'); s.classList.add('show');
+ for(let i=0;i<35;i++){
+   const e=document.createElement('div'); e.className='confetti';
+   e.textContent=['❤️','💗','✨','💕','🌸','🫶'][Math.floor(Math.random()*6)];
+   e.style.left=Math.random()*100+'vw'; e.style.fontSize=(16+Math.random()*18)+'px';
+   e.style.animationDelay=(Math.random()*.8)+'s'; document.body.appendChild(e);
+   setTimeout(()=>e.remove(),4500);
+ }
+}
+</script>
+</body>
+</html>
